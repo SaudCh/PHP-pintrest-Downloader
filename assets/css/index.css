@@ -1,0 +1,343 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    nav {
+        height: 10vh;
+        position: sticky;
+        top: 0;
+        background-color: white;
+        z-index: 999;
+        display: flex;
+        align-items: center;
+    }
+    
+    nav h3 {
+        letter-spacing: .5rem;
+    }
+    
+    .section1 {
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e81c23;
+        color: white;
+        flex-direction: column;
+    }
+    
+    .section1 h1 {
+        font-size: 50px;
+        font-weight: bolder;
+    }
+    
+    .section1 button {
+        color: white;
+    }
+    
+    .form {
+        background-color: white;
+        width: 600px;
+        height: 8vh;
+        border-radius: 20px;
+        padding: 0 10px;
+    }
+    
+    .flex {
+        display: flex;
+        align-items: center;
+    }
+    
+    #query {
+        border: none;
+        outline: gray;
+    }
+    
+    .section1 p {
+        font-size: 20px;
+    }
+    /*******************************************/
+    
+    .section2 {
+        margin: 0 20vh;
+        margin-top: 100px;
+        overflow: hidden;
+        box-shadow: 5px 10px 18px;
+        border-radius: 25px;
+    }
+    
+    .section2 div div {
+        height: 60vh;
+        overflow: hidden;
+    }
+    
+    .wallpaper {
+        background-image: url("../images/wallpaper.jpg");
+        background-position: center;
+        background-size: cover;
+        overflow: hidden;
+    }
+    
+    .section2 h3 {
+        font-size: 50px;
+        font-weight: bolder;
+    }
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /*******************************************/
+    
+    .section3 {
+        margin: 0 20vh;
+        margin-top: 100px;
+    }
+    
+    .section3 h3 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: 900;
+        color: #f72565;
+    }
+    
+    .section3 p {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .section4 div {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section4-card {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        box-shadow: 5px 10px 18px;
+        border-radius: 25px;
+    }
+    
+    .section4-card div {
+        height: 15vh;
+        margin-bottom: 20px;
+    }
+    
+    .section4-card div h4 {
+        color: #f72565;
+        text-align: center;
+    }
+    
+    hr {
+        margin: 0 10px 20px 10px;
+    }
+    
+    .section5 {
+        margin-top: 100px;
+    }
+    
+    .section5 h3 {
+        font-size: 80px;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .section6 {
+        margin: 0 20vh;
+    }
+    
+    .section6-subcontainer {
+        box-shadow: 5px 10px 18px;
+        border-radius: 25px;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .section6-part1 {
+        height: 60vh;
+        width: 100%;
+        background-image: url("../images/section6.png");
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .section6-part2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 60vh;
+    }
+    
+    .section6-part2 h3 {
+        font-size: 33px;
+        color: #f72565;
+        font-weight: bold;
+    }
+    
+    .section6-part2 p {
+        font-size: 22px;
+    }
+    
+    footer {
+        margin-top: 100px;
+        background-color: white;
+    }
+    
+    footer div div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer div {
+        width: 100%;
+    }
+    
+    .footer-part1b p {
+        margin: 0;
+    }
+    
+    .hover {
+        transition: all .5s;
+    }
+    
+    .hover:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+    
+    @media screen and (max-width:610px) {
+        .section1 {
+            text-align: center;
+        }
+        .form {
+            width: 600px;
+            background-color: transparent;
+            height: unset;
+        }
+        #download-btn {
+            width: 300px;
+            margin: 10px;
+        }
+        #query {
+            width: 90%;
+        }
+        .flex {
+            flex-direction: column;
+        }
+        .section2 {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .section3 {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        .section4 {
+            margin-left: 30px;
+            margin-right: 0;
+        }
+        .section5 {
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .section6 {
+            margin-left: 40px;
+            margin-right: 10px;
+        }
+        .info {
+            padding-left: 50px;
+        }
+        .sub-footer div {
+            margin: 20px 0;
+        }
+        footer img {
+            margin-left: 30px;
+        }
+    }
+    
+    @media screen and (max-width:510px) {
+        .form {
+            width: 400px;
+        }
+        #query {
+            width: 400px;
+        }
+    }
+    
+    @media screen and (max-width:410px) {
+        .form {
+            width: 300px;
+        }
+        #query {
+            width: 350px;
+            height: 50px;
+        }
+    }
+    
+    @media screen and (max-width:355px) {
+        .form {
+            width: 300px;
+        }
+        #query {
+            width: 300px;
+        }
+    }
+    
+    .back-to-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background-color: #00B2ff;
+        height: 50px;
+        width: 50px;
+        display: flex;
+        border-radius: 20%;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: all .5s;
+    }
+    
+    #back-to-top i {
+        font-size: 32px;
+        color: white;
+    }
+    
+    .display-none {
+        opacity: 1;
+    }
+    /*******************************************/
+    
+    .bdr {
+        border: 1px solid black;
+        border-radius: 25px;
+    }
+    
+    .result-div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+    }
+    
+    .result-div button {
+        margin-top: 50px;
+    }
+    
+    .result-div button a {
+        color: white;
+    }
+    
+    .result-div button a:hover {
+        text-decoration: none;
+    }
